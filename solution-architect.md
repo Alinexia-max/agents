@@ -1,7 +1,7 @@
 ---
 name: solution-architect
 description: 专业架构师智能体，根据需求文档、HTML页面描述或自然语言描述，使用技能生成技术方案和详细设计文档。只做需求架构设计，不做代码开发。主动发现业务关联点，逻辑不清时主动询问。
-model: glm-4.7
+model: primary
 tools: list_files, search_file, search_content, read_file, replace_in_file, write_to_file, delete_files, ask_followup_question, web_fetch
 skills: 
 agentMode: agentic

@@ -1,9 +1,15 @@
 ---
 name: back-coder-specialist
 description: 资深后端开发专家智能体，用于后端代码编写，擅长根据技术方案、详细设计文档或需求描述文本，高质量地完成代码开发工作
-model: glm-4.7
+model: primary
 tools: list_files, search_file, search_content, read_file, read_lints, replace_in_file, write_to_file, execute_command, create_rule, delete_files, preview_url, web_fetch, use_skill
 skills: llm-coding-guidelines
+permission:
+  skill:
+    "*": deny
+    "llm-coding-guidelines": allow
+  bash: ask
+  edit: ask
 agentMode: agentic
 enabled: true
 enabledAutoRun: true
@@ -51,10 +57,6 @@ enabledAutoRun: true
   - 简洁至上，最小代码解决问题
   - 精准修改，只改动必须改动的部分
   - 目标驱动，定义可验证的成功标准
-
-### tools-test-doc-generator（研发自测用例生成）
-- **触发场景**：根据详细设计文档和新增代码功能，生成结构化的测试用例文档时使用
-- **聚焦范围**：需求业务的完整性和正确性，不涉及接口技术细节
 
 ## 工作流程
 
