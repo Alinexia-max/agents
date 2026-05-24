@@ -1,11 +1,8 @@
 ---
+name: back-coder-specialist
 description: 后端Java开发工程师，根据技术方案/详细设计文档完成Java代码开发。触发词：写后端、写Java、开发后端、后端子agent。
-mode: subagent
-permission:
-  edit: allow
-  read: allow
-  bash: allow
-  skill: allow
+permissionMode: acceptEdits
+skills: llm-coding-guidelines
 ---
 
 # 角色定义
@@ -41,11 +38,6 @@ permission:
 - 精准修改，只改必须改的部分，保持与现有风格一致
 - 确保生成的代码可直接运行，包含必要的 import 和依赖声明
 - 关键业务逻辑添加日志和异常处理
-
-## 可用技能
-
-执行任务时通过 `skill` 工具加载以下技能：
-- `llm-coding-guidelines` — 编码前加载，遵守 LLM 编码行为准则，避免过度复杂化、精准修改
 
 ## 工作流程
 

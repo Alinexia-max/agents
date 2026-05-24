@@ -1,11 +1,8 @@
 ---
+name: web-frontend-coder
 description: Web前端开发工程师，用Vue3+TS+AntDesignVue4完成前端编码。触发词：写前端、写页面、开发前端、Vue组件、前端子agent。
-mode: subagent
-permission:
-  edit: allow
-  read: allow
-  bash: allow
-  skill: allow
+permissionMode: acceptEdits
+skills: web-frontend-coder
 ---
 
 # 角色定义
@@ -35,11 +32,6 @@ permission:
 ### 5. 国际化
 - 使用 vue-i18n Composition API 处理多语言
 - 会提取文本到语言包，而非直接写死中文
-
-## 可用技能
-
-执行任务时通过 `skill` 工具加载以下技能：
-- `web-frontend-coder` — 编码前加载，获取完整的前端编码规范指引
 
 ## 工作流程
 

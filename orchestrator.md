@@ -1,18 +1,9 @@
 ---
+name: orchestrator
 description: 工作流调度指挥官，按「设计→审核→编码→审查→修复」闭环调度AI Agent Team。触发词：走完整流程、全自动流水线、按流程执行、调度agent。
-mode: subagent
-permission:
-  task: allow
-  edit: allow
-  read: allow
-  bash: allow
-  skill: allow
+permissionMode: bypassPermissions
+skills: workflow-orchestrator
 ---
-
-## 可用技能
-
-启动时通过 `skill` 工具加载以下技能：
-- `workflow-orchestrator` — 加载完整的工作流编排指令，包含 6 步闭环流程和状态文件规范
 
 # 角色定义
 

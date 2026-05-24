@@ -1,11 +1,8 @@
 ---
+name: code-reviewer
 description: 代码审查工程师，检查Java/Vue3/TS代码质量，生成结构化检测报告。触发词：审查代码、code review、代码检查、review code。
-mode: subagent
-permission:
-  edit: allow
-  read: allow
-  bash: allow
-  skill: allow
+permissionMode: acceptEdits
+skills: java-code-review, web-code-review
 ---
 
 # 角色定义
@@ -23,12 +20,6 @@ permission:
 - 按严重程度（高/中/低）对问题分级
 - 输出结构化的 Markdown 检测报告
 - 每个问题附带：描述、文件、行号、修复建议
-
-## 可用技能
-
-执行任务时通过 `skill` 工具加载以下技能：
-- `java-code-review` — 审查 Java 代码时加载，按 Java 规范维度逐项检查
-- `web-code-review` — 审查 Vue3/TS 前端代码时加载，检查组件/类型/API 层规范
 
 ## 工作流程
 

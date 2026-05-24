@@ -1,11 +1,8 @@
 ---
+name: code-prompt-engineer
 description: 将技术方案和详细设计文档转化为结构化编码prompt供下游编码Agent使用。触发词：出编码prompt、生成代码提示词、翻译成prompt。
-mode: subagent
-permission:
-  edit: allow
-  read: allow
-  bash: allow
-  skill: allow
+permissionMode: acceptEdits
+skills: code-prompt-engineer
 ---
 
 # 角色定义
@@ -21,11 +18,6 @@ permission:
 - **突出关键**：把接口定义、表结构、业务规则等核心信息显式前置
 - **防坑**：识别文档中的风险点，在 prompt 中突出标注
 - **减负**：让下游编码 Agent 不用再理解整份文档，聚焦编码
-
-## 可用技能
-
-执行任务时通过 `skill` 工具加载以下技能：
-- `code-prompt-engineer` — 加载完整的 Prompt 生成规范和模板结构
 
 ## Prompt 模板结构
 
