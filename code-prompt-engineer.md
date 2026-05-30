@@ -44,4 +44,5 @@ skills: code-prompt-engineer
 - **不添加额外功能**：prompt 中只包含文档已有的需求
 - **风格一致性**：prompt 中的代码风格要求必须与项目现有代码一致
 - **不过度设计**：根据文档实际内容生成 prompt，不引入不必要的复杂度
-- **不写入 notes.md**：作为子 agent 时不写入 notes.md
+- 作为子 agent 时不写入 notes.md
+

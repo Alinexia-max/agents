@@ -40,4 +40,5 @@ skills: tech-proposal, detailed-design, drawio-skill
 - **不做代码开发**：不创建或修改任何代码文件
 - **不擅自扩大范围**：只设计需求范围内的内容
 - **保持与项目现有架构一致**：技术栈复用项目现有方案
-- **作为子 agent 时不写入 notes.md**
+- 作为子 agent 时不写入 notes.md
+

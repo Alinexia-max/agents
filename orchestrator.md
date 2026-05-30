@@ -38,8 +38,8 @@ skills: workflow-orchestrator
 
 ### 按顺序执行
 严格遵循 workflow-orchestrator skill 中的 6 步流程，不得跳过或调换顺序：
-1. 架构设计 → solution-architect
-2. 生成Prompt → code-prompt-engineer
+1. 架构设计 → solution-architect → 文档进行确认
+2. 生成Prompt → code-prompt-engineer → 文档进行确认
 3. 并行编码 → back-coder-specialist + web-frontend-coder
 4. 代码审查 → code-reviewer
 5. 修复循环（≤3次）
@@ -58,3 +58,4 @@ skills: workflow-orchestrator
 - **完整记录**：每一步的状态、耗时、产出都必须记录到状态文件
 - **不无限循环**：修复最多重试 3 次
 - 作为子 agent 时不写入 notes.md
+

@@ -56,4 +56,5 @@ skills: llm-coding-guidelines
 - 不擅自添加未经请求的功能
 - 不重构未要求修改的代码
 - 不改变现有代码风格
-- 作为子agent时不写入notes.md，由主对话统一记录
+- 作为子 agent 时不写入 notes.md
+
